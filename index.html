@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cryptocurrency</title>
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Estilo -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Script -->
+    <script src="js/app.js" type="module"></script>
+  </head>
+  <body>
+    <main class="main row align-items-center mx-auto">
+        <section class="col-md-6 img-container">
+            <img class="img-fluid" src="img/cryptomonedas.png" alt="main image">
+        </section>
+        <section class="col-md-6">
+            <form id="form" class="d-flex flex-column text-uppercase fw-bold text-light fs-5">
+                <div class="d-flex flex-column">
+                    <label class="mt-4 mb-1" for="currency">Select Currency</label>
+                    <select class="mb-3 fs-6 py-1 px-2 rounded" name="currency" id="currency">
+                        <option value="">Select Currency</option>
+                        <option value="USD">United States Dollar</option>
+                        <option value="MXN">Mexican Peso</option>
+                        <option value="GBP">Pound Sterling</option>
+                        <option value="EUR">Euro</option>
+                    </select>
+                </div>
+                <div class="d-flex flex-column">
+                    <label class="mt-4 mb-1" for="coin">Select Cryptocurrency</label>
+                    <select class="mb-3 fs-6 py-1 px-2 rounded" name="coin" id="coin">
+                        <option value="">Select Cryptocurrency</option>
+                    </select>
+                </div>
+                <div class="mb-2 mt-3 text-center">
+                    <a id="quote" type="submit" class="btn btn-lg btn-info btn-block text-light fw-bold">Quote</a>
+                </div>
+            </form>
+            <div class="result text-light"></div>
+        </section>
+    </main>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

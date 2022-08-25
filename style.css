@@ -1,0 +1,23 @@
+body {
+    background-color: #0d2235;
+    font-family: 'Raleway', sans-serif;
+}
+
+.main {
+    width: 85%;
+    max-width: 960px;
+    box-sizing: border-box;
+}
+@media (min-width: 550px) {
+    .main {
+        width: 80%;
+    }
+}
+
+.img-container {
+    margin-top: 150px;
+}
+
+#quote {
+    width: 100%;
+}
